@@ -1,0 +1,357 @@
+{% include "layout.html" %}
+			<main>
+				<section  class="section1">
+					<h3>Welcome Bibliophiles</h3>
+					<h1>MEET YOUR NEXT BOOK <span class="change_content"> </span></h1>
+					<!--<p class="p1">"The reading of all good books is like a conversation with the finest minds of past centuries"</p>-->
+					<a href="/register" class="btnone">Signup</a>
+					<a href="/login" class="btntwo active">Login</a>
+				</section>
+			</main>
+	</header>
+<div style=" padding: 50px"></div>
+
+<div class="container-fluid my-5">
+  <div class="row">
+    <div class="col-lg-6">
+      <img class="w-100 shadow" src="{{ url_for('static', filename='images/intro.png') }}" style="max-width: 60%; height: auto; margin-left: 24%; margin-top: 10%;" />
+    </div>
+    <div class="col-lg-6">
+      <div class="p-5 mt-4">
+          <h1 class="display-4">Introduction</h1>
+          <p class="lead">Our Book Recommendation Website is a platform where users can discover books. It provides personalized book recommendations based on user preferences and behavior, making it easier to find books that match their interests.</p>
+          <a href="#" class="btn btn-outline-dark">Read More</a>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<div style=" padding: 50px"></div>
+    <!-- Bootstrap Members -->
+    <div class="py-5 team3 bg-light" style="text-align: center;">
+        <style>
+    .team3 .img-fluid {
+      max-width: 180px;
+    }
+  </style>
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-7 text-center">
+        <h2 class="mb-3">Members About Book Recommender</h2>
+      </div>
+    </div>
+    <div class="row">
+      <!-- column  -->
+      <div class="col-lg-4 mb-4">
+        <!-- Row -->
+        <div class="row">
+          <div class="col-md-12">
+            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t1.jpg" alt="wrapkit" class="img-fluid rounded-circle" />
+          </div>
+          <div class="col-md-12">
+            <div class="pt-2">
+              <h5 class="mt-4 font-weight-medium mb-0">Michael </h5>
+                <div style=" padding: 10px">
+                <p>Book recommender is amazing! It suggests great reads based on my preferences and saves me time browsing.</p>                </div>
+            </div>
+          </div>
+        </div>
+        <!-- Row -->
+      </div>
+      <!-- column  -->
+      <!-- column  -->
+      <div class="col-lg-4 mb-4">
+        <!-- Row -->
+        <div class="row">
+          <div class="col-md-12 pro-pic">
+            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t2.jpg" alt="wrapkit" class="img-fluid rounded-circle" />
+          </div>
+          <div class="col-md-12">
+            <div class="pt-2">
+              <h5 class="mt-4 font-weight-medium mb-0">Christin</h5>
+                <div style=" padding: 10px">
+              <p>Book recommendation website is an excellent resource for finding your next favorite book. Highly recommend!.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- Row -->
+      </div>
+      <!-- column  -->
+      <!-- column  -->
+      <div class="col-lg-4 mb-4">
+        <!-- Row -->
+        <div class="row">
+          <div class="col-md-12 pro-pic">
+            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t3.jpg" alt="wrapkit" class="img-fluid rounded-circle" />
+          </div>
+          <div class="col-md-12">
+            <div class="pt-2">
+              <h5 class="mt-4 font-weight-medium mb-0">Kevin</h5>
+                <div style=" padding: 10px">
+              <p>My friends and I love Book Recommender. We inspire each other to read books we never thought we'd like.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- Row -->
+      </div>
+      <!-- column  -->
+    </div>
+  </div>
+</div>
+
+    <!-- Bootstrap Quote box -->
+
+
+
+<section class="vh-100" style="background-color: #CDC4F9;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-lg-10 col-xl-8">
+
+        <div class="card rounded-3">
+          <div class="card-body p-5">
+
+            <div class="d-flex justify-content-center mb-4">
+              <img src="{{ url_for('static', filename='images/george.jpg') }}"
+                class="rounded-circle shadow-1-strong" width="90" height="105" />
+            </div>
+            <figure class="text-center mb-0">
+              <blockquote class="blockquote mb-4">
+                <p>
+                  <span class="font-italic">A reader lives a thousand lives before he dies . . . The man who never reads lives only one</span>
+                </p>
+              </blockquote>
+              <figcaption class="blockquote-footer mb-0">
+                George R.R. Martin<cite title="Source Title"></cite>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    <div style="display: flex; flex-direction: column; align-items: center; margin-top: 50px">
+        <h2 class="display-4">Services</h2>
+        <hr class="rounded" style="border-top: 6px solid black; width: 10%; margin: 10px 0 50px 0;">
+    </div>
+
+<style>
+  .card {
+    height: 100%;
+  }
+</style>
+
+
+<div class="card-container row">
+  <div class="col-lg-3 col-md-4 col-sm-6" style="margin-bottom: 20px;">
+    <div class="card" style="width:100%">
+      <img class="card-img-top" src="{{ url_for('static', filename='images/s1.png') }}" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">Trending</h4>
+        <p class="card-text">Discover the latest must-reads with our collection of trending books, covering fiction, non-fiction, and everything in between.</p>
+        <a href="#" class="btn btn-primary">Try Yourself</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6" style="margin-bottom: 20px;">
+    <div class="card" style="width:100%">
+      <img class="card-img-top" src="{{ url_for('static', filename='images/s4.png') }}" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">Recommender</h4>
+        <p class="card-text">See what other members who share your tastes have loved by using Book Recommender to display personalized recommendations.</p>
+        <a href="#" class="btn btn-primary">Try Yourself</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6" style="margin-bottom: 20px;">
+    <div class="card" style="width:100%">
+      <img class="card-img-top" src="{{ url_for('static', filename='images/s2.png') }}" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">Wishlist</h4>
+        <p class="card-text">Make a wish list on Book Recommender and place a purchase from your preferred online retailer.
+Enjoy your reading:)</p>
+        <a href="#" class="btn btn-primary">Try Yourself</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 1199px) {
+  .card-container .col-lg-3 {
+    flex-basis: 33.33%;
+  }
+}
+
+@media (max-width: 991px) {
+  .card-container .col-md-4 {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-container .col-sm-6 {
+    flex-basis: 100%;
+  }
+}
+</style>
+
+
+<!-- Out Team section -->
+<div class="bg-light py-5" >
+  <div class="container py-5">
+    <div class="row mb-4">
+      <div class="col-lg-5 ">
+        <h2 class="display-4 font-weight-light" id="Our_team">Our team</h2>
+        <p class="font-italic text-muted">We are all very different. We were born in different cities, at different times, we love different music, food, movies. But we have something that unites us all. It is our project. We are its heart. We are not just a team, we are a family.</p>
+      </div>
+    </div>
+
+    <div class="row text-center justify-content-center">
+      <!-- Team item-->
+      <div class="col-xl-4 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{{ url_for('static', filename='images/2.png') }}" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Vaibhav Gupta</h5><span class="small text-uppercase text-muted">Group Leader</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="https://m.facebook.com/profile.php?id=100006038146838" class="social-link" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="https://github.com/vibho" class="social-link" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/vibho_/" class="social-link" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/vaibhav-gupta-0104b1215/" class="social-link" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End-->
+
+      <!-- Team item-->
+      <div class="col-xl-4 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{{ url_for('static', filename='images/1.png') }}" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Shruti Gupta</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100078064344668" class="social-link" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="https://github.com/shruti14gupta" class="social-link" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li class="list-inline-item"><a href="https://instagram.com/shrutigupta662?igshid=NTc4MTIwNjQ2YQ==" class="social-link" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/shruti-gupta-0a9a10215" class="social-link" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End-->
+
+      <!-- Team item-->
+      <div class="col-xl-4 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{{ url_for('static', filename='images/3.png') }}" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Vaibhav Gupta</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="https://www.facebook.com/people/Vaibhav-Gupta/pfbid02vUW1JcJ9Lv7uvT1boGtWP7RfwUnbAspjQAN6N7x1cH7zsipHNzGoMbM29Ak7FWNCl/" class="social-link" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="https://github.com/Vaibhav420gupta" class="social-link" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/vaibhavgupta7400/" class="social-link" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/vaibhav-gupta-b38326216/" class="social-link" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End-->
+
+      <!-- Team item-->
+      <div class="col-xl-4 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{{ url_for('static', filename='images/4.png') }}" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Samridhhi Gupta</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100015932944582&mibextid=ZbWKwL" class="social-link" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="https://github.com/Samriddhi6388" class="social-link" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li class="list-inline-item"><a href="https://instagram.com/samriddhi_.4_3?igshid=ZGUzMzM3NWJiOQ==" class="social-link" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/samriddhi-gupta-a0b048252" class="social-link" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End-->
+
+        <!-- Team item-->
+      <div class="col-xl-4 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{{ url_for('static', filename='images/5.png') }}" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Shradha Gupta</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100010462206924" class="social-link" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="https://github.com/Shraddhagupta16" class="social-link" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/shraddhagupta535/" class="social-link" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/shraddha-gupta-4a359121a/" class="social-link" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End-->
+
+    </div>
+  </div>
+</div>
+
+<!-- Our Team Css -->
+<style>
+    .social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
+}
+</style>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div>
+
+  <footer class="bg-dark text-center text-white" style="position:static;  bottom: 0; width: 100%;">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+      <center>
+       <a href="https://github.com/vibho" class=" fa fa-github" style="color: #000;font-size:50px" ><i></i></a>
+       <a href=" https://m.facebook.com/profile.php?id=100006038146838" class="fa fa-facebook" style="color:#4267B2;font-size:50px" ></a>
+       <a href="https://twitter.com/Vaibhav32756208" class="fa fa-twitter" style="color: skyblue;font-size:50px" ></a>
+       <a href="mailto:rmsvgupta8261@gmail.com" class="fa fa-google" style="color: red;font-size:50px" ></a>
+       <a href=" https://www.instagram.com/vibho_/" class="fa fa-instagram" style="color: #E4405F;font-size:50px" ></a>
+      </center>
+
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-white" href="#Team">G_TEAM</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+</div>
+<!-- End of .container -->
+
+
+</body>
+</html>

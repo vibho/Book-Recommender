@@ -1,0 +1,373 @@
+*{
+	margin: 0;padding: 0;box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.4)), url('../images/n25.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+	nav {
+    		width: 100%;
+    		height: 14vh;
+    		background: rgba(0, 0, 0, 0.2);
+    		color: white;
+    		display: flex;
+    		justify-content: space-between;
+    		align-items: center;
+    		text-transform: uppercase;
+    	}
+
+nav .logo{
+	width: 25%;
+	text-align: center;
+}
+nav .menu{
+	width: 40%; 
+	display: flex;
+	justify-content: space-around;
+}
+
+nav .menu a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+nav .menu a:first-child {
+	color: #00b896;
+}
+main {
+	width: 100%;
+	height: 86vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center; color: white;
+}
+
+.section1{
+ padding-top: 13%;
+}
+
+.section1 h3{
+	font-size: 2.3em;font-weight: 400;letter-spacing: 3px;
+	text-shadow: 3px 3px 6px black;
+
+}
+
+.section1 h1{
+	margin: 30px 0 20px 0;
+	font-size: 55px;
+	font-weight: 700;
+	text-shadow: 4px 4px 6px black;
+	text-transform: uppercase;
+}
+
+.section1 .p1{
+	font-size: 25px;
+	word-spacing: 2px;
+	margin-bottom: 25px;
+	text-shadow: 3px 3px 3px black;
+}
+
+.section1 a{
+	padding: 12px 30px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: all 0.5s ease;
+
+}
+.section1 .btnone{
+	background: #fff;
+	color: #000;
+}
+
+.btnone:hover{
+	background: #00b896;
+	color: white;
+}
+
+.section1 .btntwo{
+	background: #00b896;
+	color: white;
+}
+.btntwo:hover{
+	background: #fff;
+	color: #000;
+}
+
+.change_content:after{
+	 content: '';
+	 animation: changetext 10s infinite linear;
+	 color: #00b896; 
+}
+
+ @keyframes changetext {
+ 	0% {content: "Fiction";}
+ 	20% {content: "Nonfiction";}
+ 	35% {content: "Drama";}
+ 	60% {content: "Poetry";}
+ 	80% {content: "Folktale";}
+ 	100% {content: "Historical";}
+ }
+
+p {
+  backdrop-filter: brightness(150%);
+  text-shadow: 2px 2px #ffffff;
+}
+
+
+/* Media query for screens up to 768px */
+@media (max-width: 768px) {
+	.section1 h1 {
+		font-size: 40px;
+	}
+
+	.section1 .p1 {
+		font-size: 20px;
+	}
+
+	.section1 a {
+		padding: 10px 20px;
+		font-size: 13px;
+	}
+}
+
+/* Media query for screens up to 576px */
+@media (max-width: 576px) {
+	.section1 h1 {
+		font-size: 30px;
+	}
+
+	.section1 .p1 {
+		font-size: 18px;
+	}
+
+	.section1 a {
+		padding: 8px 16px;
+		font-size: 12px;
+	}
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+body {
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	line-height:30px;
+	color:#777;
+	background:#0CF;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: #F96;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+field-set {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: none;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+}
+
+
+
+
+
+#myBtn1 {
+  display: none;
+  position: fixed;
+  bottom: 65px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #00B896;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn1:hover {
+  background-color: #555;
+}
+
+
+
+<!-- Member css -->
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+.team3 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+}
+
+.team3 h1,
+.team3 h2,
+.team3 h3,
+.team3 h4,
+.team3 h5,
+.team3 h6 {
+  color: #3e4555;
+}
+
+.team3 .font-weight-medium {
+  font-weight: 500;
+}
+
+.team3 .bg-light {
+  background-color: #f4f8fa !important;
+}
+
+.team3 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+  font-size: 13px;
+}
+
+.team3 {
+  margin-top: 30px;
+}
+
+.team3 h5 {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.team3 a {
+  color: #8d97ad;
+  padding-right: 15px;
+  -webkit-transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.team3 a:hover {
+  -webkit-transform: translate3d(0px, -5px, 0px);
+  transform: translate3d(0px, -5px, 0px);
+	color: #316ce8;
+}
+
+.team3 .title {
+  margin: 30px 0 0 0;
+}
+
+.team3 .subtitle {
+  margin: 0 0 20px 0;
+  font-size: 13px;
+}

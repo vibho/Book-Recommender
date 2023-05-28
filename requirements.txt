@@ -1,0 +1,8 @@
+flask
+numpy
+pandas
+gunicorn
+
+flask db init
+flask db migrate -m "create contact table"
+flask db upgrade

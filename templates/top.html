@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Suggestions | Book Recommender</title>
+    <link rel="icon" type="image/png" href="static/images/icons/books.png"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top mb-5 shadow">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+
+      <img src="../static/images/logo4.png" height="60px" width="255px" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/list">Book List</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/register">Signup</a>
+        </li>
+        <li class="nav-item" style="float: right;">
+          <a class="nav-link" href="/login">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div class="card border-0 shadow my-5">
+    <div class="card-body p-5">
+      <div style="display: flex; flex-direction: column; align-items: center; margin-top: 25px;">
+        <h2 class="display-4"><strong>Trending Books</strong></h2>
+        <hr class="rounded" style="border-top: 6px solid black; width: 10%; margin: 10px 0 50px 0;">
+    </div>
+
+       <!-- top recommend-->
+
+      <div class="container">
+        <div class="row">
+          {% for i in range(book_name|length) %}
+          <div class="col-md-3" style="margin-top: 50px;">
+            <div class="card" style=" height:41rem" ;>
+              <img src="{{image[i]}}" class="card-img-top">
+              <div class="card-body">
+              <h6 class="card-text">{{book_name[i]}}</h6>
+                <p>{{author[i]}}</p>
+                <p>Votes - {{votes[i]}}</p>
+                <p>Rating - {{rating[i]}}</p>
+               <!-- <a href="#" class="float-left btn btn-sn btn-primary">Wish List</a>-->
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+
+
+        </div>
+      </div>
+
+
+
+      <div style="height: 0px"></div>
+      <p class="lead mb-0"></p>
+    </div>
+  </div>
+</div>
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+<div>
+
+  <footer class="bg-dark text-center text-white" style="position:static;  bottom: 0; width: 100%;">
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-white" href="#Team">G_TEAM</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+</div>
+<!-- End of .container -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
